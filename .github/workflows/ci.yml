@@ -1,0 +1,25 @@
+name: StockPilot CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Bagimliliklari yukle
+        run: npm install --no-audit --no-fund
+      - name: TypeScript kontrolu
+        run: npm run typecheck
+      - name: Otomatik testler
+        run: npm test
+      - name: Uretim derlemesi
+        run: npm run build
