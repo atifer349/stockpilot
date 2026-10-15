@@ -11,7 +11,13 @@
   <img src="https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white" alt="React 19" />
   <img src="https://img.shields.io/badge/TypeScript-Tip%20Güvenli-3178c6?logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Test-23%2F23%20Geçti-16a34a" alt="23 test başarılı" />
-  <img src="https://img.shields.io/badge/Dağıtım-Netlify%20Hazır-0ea5e9" alt="Netlify için hazır" />
+  <img src="https://img.shields.io/badge/Dağıtım-Netlify%20Canlı-00ad9f?logo=netlify&logoColor=white" alt="Netlify canlı yayın" />
+</p>
+
+<p align="center">
+  <a href="https://glittery-kringle-14d490.netlify.app/"><strong>🌐 Canlı Demoyu Aç</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/atifer349/stockpilot"><strong>📂 GitHub Kaynak Kodları</strong></a>
 </p>
 
 > [!IMPORTANT]
@@ -39,19 +45,19 @@
 
 ## Özellikler
 
-| Modül | Yetenekler |
-| --- | --- |
-| **Genel Bakış** | Ürün çeşidi, toplam stok, maliyet değeri, kritik stoklar, kategori grafiği ve son hareketler |
-| **Ürün Yönetimi** | Ekleme, listeleme, güncelleme, silme; SKU doğrulama; arama, kategori/stok filtreleri; fiyat/stok/isim sıralama; 10/20/50 kayıtla sayfalama; CSV dışa aktarma |
-| **Kategori Yönetimi** | Kategori ekleme, düzenleme, silme, renk seçimi ve bağlı ürün bulunan kategoriyi silmeye karşı koruma |
-| **Stok Hareketleri** | Giriş ve çıkış işlemleri, otomatik miktar güncelleme, yetersiz stok kontrolü, geçmiş kayıtları ve sayfalama |
-| **Yedekleme ve Ayarlar** | JSON dışa aktarma, dosya doğrulama, onaylı geri yükleme ve örnek verilere dönüş |
+| Modül                    | Yetenekler                                                                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Genel Bakış**          | Ürün çeşidi, toplam stok, maliyet değeri, kritik stoklar, kategori grafiği ve son hareketler                                                                 |
+| **Ürün Yönetimi**        | Ekleme, listeleme, güncelleme, silme; SKU doğrulama; arama, kategori/stok filtreleri; fiyat/stok/isim sıralama; 10/20/50 kayıtla sayfalama; CSV dışa aktarma |
+| **Kategori Yönetimi**    | Kategori ekleme, düzenleme, silme, renk seçimi ve bağlı ürün bulunan kategoriyi silmeye karşı koruma                                                         |
+| **Stok Hareketleri**     | Giriş ve çıkış işlemleri, otomatik miktar güncelleme, yetersiz stok kontrolü, geçmiş kayıtları ve sayfalama                                                  |
+| **Yedekleme ve Ayarlar** | JSON dışa aktarma, dosya doğrulama, onaylı geri yükleme ve örnek verilere dönüş                                                                              |
 
 **Veri bütünlüğü:** Yinelenen SKU, geçersiz fiyat/miktar, bağlı kategorinin silinmesi ve stoktan fazla çıkış gibi işlemler engellenir. Silinen ürünlerin geçmiş hareket kayıtları korunur.
 
 ## Ekran görüntüleri
 
-> **Görseller v1.2 uygulamasından alınmalıdır.** Bu README'nin görsel bağlantıları `docs/screenshots/` dizinine bakar. Önce [v1.2 görsel alma rehberini](docs/screenshots/README.md) uygulayıp beş PNG dosyasını güncelleyin.
+> **Görseller StockPilot v1.2 uygulamasından alınmıştır.** Beş ekran görüntüsü `docs/screenshots/` klasöründe tutulur. Yeniden ekran görüntüsü almak için [v1.2 görsel alma rehberini](docs/screenshots/README.md) kullanabilirsiniz.
 
 ### Genel Bakış
 
@@ -80,18 +86,18 @@
 
 ## Teknolojiler
 
-| Katman | Teknoloji |
-| --- | --- |
-| Arayüz | React 19, TypeScript |
-| Geliştirme / Derleme | Vite 7 |
-| Stil | Tailwind CSS 4 |
-| Yönlendirme | React Router 7 |
-| Grafikler | Recharts 2.x |
-| İkonlar | Lucide React |
-| Veri saklama | Web LocalStorage API |
-| Test | Node.js yerleşik test çalıştırıcısı |
-| CI | GitHub Actions (`typecheck`, `test`, `build`) |
-| Statik dağıtım | Netlify (`netlify.toml`) |
+| Katman               | Teknoloji                                     |
+| -------------------- | --------------------------------------------- |
+| Arayüz               | React 19, TypeScript                          |
+| Geliştirme / Derleme | Vite 7                                        |
+| Stil                 | Tailwind CSS 4                                |
+| Yönlendirme          | React Router 7                                |
+| Grafikler            | Recharts 2.x                                  |
+| İkonlar              | Lucide React                                  |
+| Veri saklama         | Web LocalStorage API                          |
+| Test                 | Node.js yerleşik test çalıştırıcısı           |
+| CI                   | GitHub Actions (`typecheck`, `test`, `build`) |
+| Statik dağıtım       | Netlify (`netlify.toml`)                      |
 
 ## Kurulum ve çalıştırma
 
@@ -122,12 +128,12 @@ npm run preview     # Üretim çıktısını yerelde önizle
 
 **v1.2 yerel doğrulama sonuçları (15 Ekim 2026):**
 
-| Kontrol | Sonuç |
-| --- | --- |
-| `npm run typecheck` | Başarılı |
-| `npm test` | **23 test geçti, 0 başarısız** |
-| `npm run build` | Başarılı — Vite 7.3.7, 2,93 sn |
-| `npm install` | npm denetiminde 0 güvenlik açığı bildirildi |
+| Kontrol             | Sonuç                                       |
+| ------------------- | ------------------------------------------- |
+| `npm run typecheck` | Başarılı                                    |
+| `npm test`          | **23 test geçti, 0 başarısız**              |
+| `npm run build`     | Başarılı — Vite 7.3.7, 2,93 sn              |
+| `npm install`       | npm denetiminde 0 güvenlik açığı bildirildi |
 
 Test senaryoları JSON yedeği doğrulama, ürün ve kategori CRUD kuralları, stok giriş/çıkışı, arama, filtreleme, sıralama ve sayfalamayı kapsar. Tam tarayıcı/uçtan uca test paketi henüz yoktur. Arayüz kontrolleri için [`docs/MANUEL_TESTLER.md`](docs/MANUEL_TESTLER.md) kullanılabilir.
 
@@ -143,7 +149,7 @@ stockpilot/
 │   ├── MANUEL_TESTLER.md
 │   └── TESLIM_REHBERI.md
 ├── public/logo.svg
-├── scripts/capture_screenshots.ps1 # V1.2 ekran görüntüsü oluşturma yardımcısı
+├── scripts/capture_screenshots.ps1 # v1.2 ekran görüntüsü oluşturma yardımcısı
 ├── src/
 │   ├── components/                 # Ortak React bileşenleri
 │   ├── context/                    # InventoryProvider ve durum yönetimi
@@ -173,6 +179,11 @@ stockpilot/
 
 ## Netlify ile yayınlama
 
+StockPilot v1.2, Netlify üzerinde yayımlanmıştır:
+
+- **Canlı demo:** [StockPilot uygulamasını aç](https://glittery-kringle-14d490.netlify.app/)
+- **GitHub deposu:** [atifer349/stockpilot](https://github.com/atifer349/stockpilot)
+
 Uygulama Vite tarafından statik olarak derlenir; Netlify için `netlify.toml` hazırdır:
 
 ```toml
@@ -186,13 +197,15 @@ Uygulama Vite tarafından statik olarak derlenir; Netlify için `netlify.toml` h
   status = 200
 ```
 
+Yeniden dağıtım yapmak veya projeyi başka bir Netlify hesabında yayımlamak için:
+
 1. Projeyi GitHub'da **public** bir depoya gönderin.
 2. Netlify → **Add new project** → **Import an existing project** üzerinden GitHub deponuzu seçin.
 3. **Build command:** `npm run build` — **Publish directory:** `dist` — **Branch:** `main`.
 4. Dağıtımdan sonra `/products`, `/categories`, `/movements`, `/settings` yollarını ve CRUD işlemlerini kontrol edin.
 5. Canlı bağlantıyı eğitim teslim formuna ekleyin.
 
-**Canlı demo:** GitHub ve Netlify yayını tamamlandıktan sonra buraya doğrulanmış bağlantı eklenecek.
+> **Not:** Canlı sitedeki kayıtlar her ziyaretçinin tarayıcısındaki LocalStorage alanında tutulur; kullanıcılar aynı stok verilerini paylaşmaz.
 
 ## Bilinen sınırlamalar
 
@@ -204,11 +217,11 @@ Uygulama Vite tarafından statik olarak derlenir; Netlify için `netlify.toml` h
 
 ## Sürüm geçmişi
 
-| Sürüm | Değişiklikler |
-| --- | --- |
+| Sürüm      | Değişiklikler                                                                                                                                        |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **v1.2.0** | İş kuralları modülerleştirildi; 23 teste ulaşıldı; ürün sıralama ve sayfalama, mobil hareket görünümü, lazy loading, kayıt hatası bildirimi eklendi. |
-| **v1.1.0** | JSON yedekleme/geri yükleme, doğrulama, ayarlar sayfası, ilk otomatik testler ve teslim dokümantasyonu. |
-| **v1.0.0** | Dashboard, ürün/kategori CRUD, stok hareketleri, kritik stok takibi, LocalStorage temel işlevleri. |
+| **v1.1.0** | JSON yedekleme/geri yükleme, doğrulama, ayarlar sayfası, ilk otomatik testler ve teslim dokümantasyonu.                                              |
+| **v1.0.0** | Dashboard, ürün/kategori CRUD, stok hareketleri, kritik stok takibi, LocalStorage temel işlevleri.                                                   |
 
 ---
 
