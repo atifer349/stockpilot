@@ -51,7 +51,7 @@
 
 ## Ekran görüntüleri
 
-> **Görseller v1.2 uygulamasından alınmalıdır.** Bu README'nin görsel bağlantıları `docs/screenshots/` dizinine bakar. Önce [v1.2 görsel alma rehberini](docs/screenshots/README.md) uygulayıp beş PNG dosyasını güncelleyin; eski v1.1 ekran görüntülerini GitHub'a göndermeyin.
+> **Görseller v1.2 uygulamasından alınmalıdır.** Bu README'nin görsel bağlantıları `docs/screenshots/` dizinine bakar. Önce [v1.2 görsel alma rehberini](docs/screenshots/README.md) uygulayıp beş PNG dosyasını güncelleyin.
 
 ### Genel Bakış
 
